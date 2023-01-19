@@ -6,7 +6,7 @@
 
 不要问能不能不用Visual Studio写mod。不然：
 
-![img](./Chapter 1.assets/1.jpg)
+<img src="./Chapter 1.assets/1.jpg" alt="img"  />
 
 当你具有一定的水平后，如果嫌Visual Studio过于笨重，你也可以尝试使用其他的编辑器，如VSCode
 
@@ -20,11 +20,11 @@
 
 2. 点击“创建新项目”
 
-3. 选择控制台应用![image-20230118200129975](./Chapter 1.assets/image-20230118200129975.png)
+3. 选择控制台应用<img src="./Chapter 1.assets/image-20230118200129975.png" alt="image-20230118200129975" style="zoom: 80%;" />
 
 4. 项目名称可以随意，教程使用“ReCSharpTutorialsCodes”，然后选择一个合适的路径
 
-5. 框架选择.NET 6，**注意勾选不使用顶级语句**，我们需要认识完整的初始代码结构![image-20230118200535966](./Chapter 1.assets/image-20230118200535966.png)
+5. 框架选择.NET 6，**注意勾选不使用顶级语句**，我们需要认识完整的初始代码结构<img src="./Chapter 1.assets/image-20230118200535966.png" alt="image-20230118200535966" style="zoom:80%;" />
 
    如果你没有.NET 6选项，请自行设法安装.NET 6 SDK，~~这是教程的一部分~~
 
@@ -50,11 +50,11 @@
 
 写成这样之后，你可以看到VS为我们用红色波浪线标出了代码中的错误：
 
-![image-20230118202359838](./Chapter 1.assets/image-20230118202359838.png)
+<img src="./Chapter 1.assets/image-20230118202359838.png" alt="image-20230118202359838"  />
 
 将光标悬停在波浪线上，可以看到VS对错误的提示和可能的修正方案：
 
-![image-20230118202515814](./Chapter 1.assets/image-20230118202515814.png)
+<img src="./Chapter 1.assets/image-20230118202515814.png" alt="image-20230118202515814"  />
 
 按照VS的建议，输入`;`完成代码。
 
@@ -62,11 +62,11 @@
 
 确保没有任何报错后，我们可以尝试运行你的程序。
 
-![image-20230118202759778](./Chapter 1.assets/image-20230118202759778.png)
+<img src="./Chapter 1.assets/image-20230118202759778.png" alt="image-20230118202759778"  />
 
 你可以直接按最左边的按钮，这将以**调试模式**启动程序，不过目前对我们没什么影响。调试功能将在后面讲解。
 
-![image-20230118202927857](./Chapter 1.assets/image-20230118202927857.png)
+<img src="./Chapter 1.assets/image-20230118202927857.png" alt="image-20230118202927857"  />
 
 如果操作没有任何问题，你应该可以看到此界面。
 
@@ -99,7 +99,7 @@ namespace ReCSharpTutorialsCodes
 
 - `Console`必须写成`System.Console`
 
-  ![image-20230118205158308](./Chapter 1.assets/image-20230118205158308.png)
+  <img src="./Chapter 1.assets/image-20230118205158308.png" alt="image-20230118205158308"  />
 
 - `string`必须写成`System.String`
 
@@ -120,7 +120,7 @@ namespace ReCSharpTutorialsCodes
 using System;
 ```
 
-![image-20230118205020730](./Chapter 1.assets/image-20230118205020730.png)
+<img src="./Chapter 1.assets/image-20230118205020730.png" alt="image-20230118205020730" style="zoom:80%;" />
 
 其实最经典的hello world应当是这样的，而现在.NET版本的迭代使得一些极常用的命名空间（如`System`）可以省略不写using，~~所以我们在后面需要的时候再说如何正确使用using语句~~所以我们使用使用一些别的例子来演示using语句。
 
@@ -182,7 +182,7 @@ namespace ReCSharpTutorialsCodes.MyUtils
 
 然后让我们回到`Program.cs`中，尝试键入Utils，然后你可以看到VS智能感知提出的建议：
 
-![image-20230119094647843](./Chapter 1.assets/image-20230119094647843.png)
+<img src="./Chapter 1.assets/image-20230119094647843.png" alt="image-20230119094647843"  />
 
 如果此时你接受建议，VS会自动在文件开头添加一行`using ReCSharpTutorialsCodes.MyUtils;`
 
@@ -221,7 +221,7 @@ namespace ReCSharpTutorialsCodes
 
 现在让我们把视线移到解决方案管理器上来。
 
-![image-20230119095040450](./Chapter 1.assets/image-20230119095040450.png)
+<img src="./Chapter 1.assets/image-20230119095040450.png" alt="image-20230119095040450"  />
 
 - **解决方案**  解决方案位于最顶级。每个C#应用程序都包含单个解决方案文件，而一个解决方案可以包含一个或多个项目。实际上，如果你在文件资源管理器中查看，你会发现它的命名为`ReCSharpTutorialsCode.sln`。
 - **ReCSharpTutorialsCode**  这是C#项目文件，包含了应用程序所需的所有源代码文件、资源和配置信息。一个项目的所有代码必须使用相同的编程语言。在文件资源管理器中，该文件的实际名称是`ReCSharpTutorialsCode.csproj`。

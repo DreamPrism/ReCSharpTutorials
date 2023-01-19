@@ -173,7 +173,7 @@ Mod.GetTextWhenLoad();
 
 你会得到来自VS的贴心提示：
 
-![image-20230118155855848](./Chapter 7.assets/image-20230118155855848.png)
+<img src="./Chapter 7.assets/image-20230118155855848.png" alt="image-20230118155855848"  />
 
 为什么会这样呢？因为`Console.WriteLine()`方法被声明为`static`。`static`关键字可将方法或字段声明为静态，然后就可以直接通过类名调用方法或访问字段。`static`关键字用于修饰**不需要依赖于类的实例的工具方法或实用方法**，例如`Console.WriteLine()`方法的声明实际上是这样的：
 
