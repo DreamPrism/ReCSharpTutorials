@@ -215,6 +215,8 @@ namespace ReCSharpTutorialsCodes
 
 `Program`下的`static void Main(string[] args)`是控制台程序的**入口点**。通俗来讲，计算机并不会从第一行开始运行你的代码，而是找到这个方法，从这个方法开始执行你的程序。至于`internal`,`static`,`void`等关键字我们会在后面的教程中学习。
 
+换言之，如果你需要运行一些教程中的代码，你应该在`Program`下的`Main`方法中写，如果写在别的地方，它们很可能并不会被执行。
+
 ## 1-3 审视解决方案管理器中的文件
 
 现在让我们把视线移到解决方案管理器上来。
