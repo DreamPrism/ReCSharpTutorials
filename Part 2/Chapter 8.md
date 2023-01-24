@@ -355,7 +355,7 @@ static void Main(string[] args)
 
 ~~下面是裙子的教程中用到的比方（也可以是裙子语录）~~
 
-<img src="C:/Users/Bright_Tommy/AppData/Roaming/Typora/typora-user-images/image-20230124175547062.png" alt="image-20230124175547062" style="zoom:67%;" />
+<img src="https://fs49.org/wp-content/uploads/2023/01/image-20230124175547062-1.png" alt="image-20230124175547062" style="zoom:67%;" />
 
 # *计算机内存的组织方式（理论）
 
@@ -386,7 +386,7 @@ void Method(int param)
 
 假定参数 `i` 为42。调用方法时，栈中将分配一个 `int` 大小的内存并用值42初始化。在方法内部，还要从栈中分配出另一小块内存，它刚够存储一个引用（一个内存地址），只是暂时不进行初始化（它是为变量 `c` 准备的）。接着要从堆中分配一个足够大的内存区域来容纳一个 `Circle` 对象，这正是 `new` 关键字所执行的操作，它运行 `Circle` 构造器，将这个原始的堆内存转换成 `Circle`对象，对这个 `Circle` 对象的引用将存储到变量 `c` 中。下图对此进行了演示：
 
-<img src="C:/Users/Bright_Tommy/AppData/Roaming/Typora/typora-user-images/image-20230124191339844.png" alt="image-20230124191339844" style="zoom: 33%;" />
+<img src="https://fs49.org/wp-content/uploads/2023/01/image-20230124191339844-1.png" alt="image-20230124191339844" style="zoom: 33%;" />
 
 这时应注意以下两点：
 
@@ -410,7 +410,7 @@ Circle c = new Circle(42);
 object o = c; //OK
 ```
 
-<img src="C:/Users/Bright_Tommy/AppData/Roaming/Typora/typora-user-images/image-20230124192809505.png" alt="image-20230124192809505" style="zoom: 33%;" />
+<img src="https://fs49.org/wp-content/uploads/2023/01/image-20230124192809505-1.png" alt="image-20230124192809505" style="zoom: 33%;" />
 
 ## 装箱
 
@@ -423,7 +423,7 @@ object o = i; //OK
 
 执行第2个语句时，所发生的事情需要仔细思考一下。`i` 是值类型，所以它在栈中。如果直接引用 `i`，那么引用的将是栈。但这种行为是不允许的，所有的引用必须引用堆上的对象。实际发生的事情是运行时在堆中分配一小块内存，将 `i` 的值复制到这块内存中，然后让变量 `o` 引用这份拷贝。这种自动将数据项从栈复制到堆的行为称为**装箱**。
 
-<img src="C:/Users/Bright_Tommy/AppData/Roaming/Typora/typora-user-images/image-20230124193320673.png" alt="image-20230124193320673" style="zoom:33%;" />
+<img src="https://fs49.org/wp-content/uploads/2023/01/image-20230124193320673-1.png" alt="image-20230124193320673" style="zoom:33%;" />
 
 > 修改 `i` 的原始值，`o` 所引用的堆上的值不会改变。对 `o` 的操作也不影响该原始值。
 
